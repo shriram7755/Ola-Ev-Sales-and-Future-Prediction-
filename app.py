@@ -117,6 +117,7 @@ def predict():
     plt.savefig(buf, format='png')
     buf.seek(0)
     plot_data = base64.b64encode(buf.read()).decode('utf-8')
+    buf.close()  # Close the buffer to release resources
     plt.close()
 
     # Render the result page
