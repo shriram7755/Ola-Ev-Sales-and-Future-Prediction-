@@ -1,4 +1,4 @@
-pip install --upgrade pip
+python==3.7.2
 absl-py==2.1.0
 anyio==3.5.0
 argon2-cffi==21.3.0
